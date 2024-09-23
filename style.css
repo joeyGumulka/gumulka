@@ -1,6 +1,6 @@
 /* Style for the navigation bar */
 nav {
-    background-color: #333;
+    background-color: #4e6751;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -13,7 +13,7 @@ ul.tabs {
     padding: 0;
     display: flex; /* Use flexbox to distribute tabs evenly */
     justify-content: space-evenly; /* Space tabs equally across the bar */
-    background-color: #333;
+    background-color: #4e6751;
 }
 
 ul.tabs li {
@@ -27,7 +27,7 @@ ul.tabs li a {
     width: 100%;
     color: white;
     text-decoration: none;
-    background-color: #444; /* Button background */
+    background-color: #132a16; /* Button background */
     border-radius: 4px;
     margin: 5px;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
@@ -35,7 +35,7 @@ ul.tabs li a {
 }
 
 ul.tabs li a:hover {
-    background-color: #111;
+    background-color: #5c7639;
     color: #ddd;
 }
 
