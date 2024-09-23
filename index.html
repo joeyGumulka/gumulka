@@ -3,41 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joey Gumulka</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Your Website</title>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav>
         <ul class="tabs">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" id="home-tab">Home</a></li>
+            <li><a href="#" id="education-tab">Education</a></li>
+            <li><a href="#" id="projects-tab">Projects</a></li>
+            <li><a href="#" id="contact-tab">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Content Sections -->
     <div id="home">
-        <h1>Joey Gumulka; Welcome and About Me</h1>
-        <p>testtesttest</p>
+        <h1>Home Content</h1>
+        <p>Welcome to the home page!</p>
     </div>
-
     <div id="education">
-        <h1>A Summary of My Personal Education History</h1>
-        <p>Information about your education goes here.</p>
+        <h1>Education Content</h1>
+        <p>Details about education.</p>
     </div>
-
     <div id="projects">
-        <h1>Projects</h1>
-        <p>Details about your projects go here.</p>
+        <h1>Projects Content</h1>
+        <p>Details about projects.</p>
     </div>
-
     <div id="contact">
-        <h1>Contact Information</h1>
-        <p>Ways to contact you.</p>
+        <h1>Contact Content</h1>
+        <p>Contact details.</p>
     </div>
 
-    <script src="scripts.js"></script> <!-- link to your JS file -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tabs li a');
+            const sections = document.querySelectorAll('div');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent default link behavior
+                    sections.forEach(section => section.style.display = 'none'); // Hide all sections
+
+                    // Show the corresponding section
+                    if (this.id === 'home-tab') {
+                        document.getElementById('home').style.display = 'block';
+                    } else if (this.id === 'education-tab') {
+                        document.getElementById('education').style.display = 'block';
+                    } else if (this.id === 'projects-tab') {
+                        document.getElementById('projects').style.display = 'block';
+                    } else if (this.id === 'contact-tab') {
+                        document.getElementById('contact').style.display = 'block';
+                    }
+                });
+            });
+
+            // Display the home section by default when the page loads
+            document.getElementById('home').style.display = 'block';
+        });
+    </script>
 </body>
 </html>
