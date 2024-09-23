@@ -16,7 +16,7 @@ ul.tabs {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox to distribute tabs evenly */
+    display: flex; /* Use flexbox to distribute tabs evenly  */
     justify-content: space-evenly; /* Space tabs equally across the bar */
     background-color: #4e6751;
 }
