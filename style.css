@@ -1,26 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+/* Style for the navigation bar */
+nav {
+    background-color: #333;
+}
+
+ul.tabs {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-}
-header {
+    overflow: hidden;
     background-color: #333;
+}
+
+ul.tabs li {
+    float: left;
+}
+
+ul.tabs li a {
+    display: block;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-section {
-    margin: 20px;
-    padding: 10px;
+
+ul.tabs li a:hover {
+    background-color: #111;
 }
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+/* Style for the content sections */
+div {
+    padding: 20px;
+}
+
+/* Optionally hide content sections and display based on navigation */
+div:not(:first-child) {
+    display: none;
 }
