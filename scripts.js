@@ -1,42 +1,19 @@
-// Get all the tab links
-const tabs = document.querySelectorAll('.tabs a');
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.tabs li a');
+    const sections = document.querySelectorAll('div');
 
-// Add a click event listener to each tab
-tabs.forEach(tab => {
-    tab.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent the default action of the link
+    // Function to display the correct section based on the tab clicked
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default link behavior
+            sections.forEach(section => section.style.display = 'none'); // Hide all sections
 
-        // Hide all sections
-        document.querySelectorAll('div').forEach(section => {
-            section.style.display = 'none';
+            // Show the corresponding section based on tab clicked
+            const targetSection = this.id.replace('-tab', ''); // Get the section ID
+            document.getElementById(targetSection).style.display = 'block'; // Show the section
         });
-
-        // Show the clicked section
-        const target = document.querySelector(this.getAttribute('href'));
-        target.style.display = 'block';
     });
+
+    // Display the home section by default when the page loads
+    document.getElementById('home').style.display = 'block';
 });
-
-// Function to show the selected section and hide the others
-function showSection(sectionId) {
-    // Get all sections
-    const sections = document.querySelectorAll("div");
-    
-    // Loop through sections and hide them
-    sections.forEach(section => {
-        section.style.display = "none";
-    });
-    
-    // Show the selected section
-    document.getElementById(sectionId).style.display = "block";
-}
-
-// Attach event listeners to navigation links
-document.querySelectorAll(".tabs li a").forEach(link => {
-    link.addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent default anchor behavior
-        const sectionId = this.getAttribute("href").substring(1); // Get the section ID from the href
-        showSection(sectionId); // Show the relevant section
-    });
-});
-
