@@ -1,6 +1,6 @@
 /* Style for the navigation bar */
 body {
-    background-color: lightblue;
+    background-color: #7eb078;
 }
 
 nav {
@@ -48,10 +48,6 @@ ul.tabs li a:hover {
     color: #ddd;
 }
 
-/* Make sure content is displayed nicely below the tabs */
-div {
-    padding: 20px;
-}
 
 /* Optionally hide content sections and display based on navigation */
 div:not(:first-child) {
