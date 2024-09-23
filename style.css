@@ -7,6 +7,11 @@ nav {
     position: relative;
 }
 
+/* Hide all sections except the first one (home) */
+#education, #projects, #contact {
+    display: none;
+}
+
 ul.tabs {
     list-style-type: none;
     margin: 0;
