@@ -1,33 +1,45 @@
 /* Style for the navigation bar */
 nav {
     background-color: #333;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
 }
 
 ul.tabs {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex; /* Use flexbox to distribute tabs evenly */
+    justify-content: space-evenly; /* Space tabs equally across the bar */
     background-color: #333;
 }
 
 ul.tabs li {
-    float: left;
+    flex: 1; /* Each list item takes up an equal amount of space */
+    text-align: center;
 }
 
 ul.tabs li a {
-    display: block;
+    display: inline-block;
+    padding: 14px 0;
+    width: 100%;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    background-color: #444; /* Button background */
+    border-radius: 4px;
+    margin: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+    font-size: 18px; /* Increase font size */
 }
 
 ul.tabs li a:hover {
     background-color: #111;
+    color: #ddd;
 }
 
-/* Style for the content sections */
+/* Make sure content is displayed nicely below the tabs */
 div {
     padding: 20px;
 }
