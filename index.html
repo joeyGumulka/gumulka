@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js" defer></script> <!-- Link to the JavaScript file -->
     <title>Your Website</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tabs li a');
+            const sections = document.querySelectorAll('div');
+
+            // Function to display the correct section based on the tab clicked
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent default link behavior
+                    sections.forEach(section => section.style.display = 'none'); // Hide all sections
+
+                    // Show the corresponding section based on tab clicked
+                    const targetSection = this.id.replace('-tab', ''); // Get the section ID
+                    document.getElementById(targetSection).style.display = 'block'; // Show the section
+                });
+            });
+
+            // Display the home section by default when the page loads
+            document.getElementById('home').style.display = 'block';
+        });
+    </script>
 </head>
 <body>
     <nav>
