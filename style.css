@@ -1,3 +1,8 @@
+/* Style for the navigation bar */
+body {
+    background-color: #7eb078;
+}
+
 ul.tabs li {
     flex: 1; /* Each list item takes up an equal amount of space */
     text-align: center;
