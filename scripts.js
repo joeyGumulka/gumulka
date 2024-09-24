@@ -18,3 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
     sections.forEach(section => section.style.display = 'none'); // Hide all sections initially
     document.getElementById('home').style.display = 'block'; // Show home section
 });
+
+
+console.log("123")
