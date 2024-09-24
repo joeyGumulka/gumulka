@@ -64,6 +64,10 @@ ul.tabs li a:hover {
     display: block; /* Show home section by default */
 }
 
+.text-content #about-me {
+    display: block; /* Show home section by default */
+}
+
 #home h1 {
     font-size: 28px;
     color: #ffffff;
