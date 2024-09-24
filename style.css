@@ -51,6 +51,7 @@ ul.tabs {
     background-color: #4e6751; /* Background color for the tabs */
     width: 100%; /* Full width */
     text-align: center; /* Center-align the inline-block elements */
+    padding-bottom: 10px;
 }
 
 ul.tabs li {
@@ -71,6 +72,7 @@ ul.tabs li a {
     transition: background-color 0.3s ease, color 0.3s ease; /* Transition effects */
     font-size: 18px; /* Font size */
     width: 100%; /* Full width of the list item */
+    padding-top: 10px;
 }
 
 ul.tabs li a:hover {
