@@ -3,65 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
-    <title>My Website</title>
+    <title>Tab Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this path is correct -->
 </head>
 <body>
     <nav>
         <ul class="tabs">
-            <li><a href="#home" id="home-tab">Home</a></li>
-            <li><a href="#education" id="education-tab">Education</a></li>
-            <li><a href="#projects" id="projects-tab">Projects</a></li>
-            <li><a href="#contact" id="contact-tab">Contact</a></li>
+            <li><a id="home-tab" href="#home">Home</a></li>
+            <li><a id="about-tab" href="#about">About</a></li>
+            <li><a id="projects-tab" href="#projects">Projects</a></li>
+            <li><a id="contact-tab" href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <div id="home">
-        <section id="about-me">
+    <div class="content">
+        <section id="home" class="text-content">
+            <h1>Welcome</h1>
+            <p>My name is Joey Gumulka, and I am currently a second-year student in the University of Windsor’s Honours Computer Science Program...</p>
+        </section>
+        <section id="about" class="text-content hidden">
             <h1>About Me</h1>
-            <div class="about-content">
-                <div class="text-content">
-                    <p>
-                        My name is Joey Gumulka, and I am currently a second-year student in the University of Windsor’s Honours Computer Science Program. I am a native Ontario resident, having grown up in a small town north of Toronto. Since early childhood, I have always had a strong fascination with everything related to computers and video games.
-                    </p>
-                    <p>
-                        As I grew older, my parents fueled my passion by enrolling me in a weekend computer science program. There, I was first introduced to the basics of coding, sparking my love for the creativity it offers. Since then, I have been experimenting with developing my own programs and games. In high school, I took two computer courses, one in Python and the other in Java. Currently, I continue to explore my interests in computer science, enhanced by the knowledge I'm gaining at the University of Windsor.
-                    </p>
-                    <p>
-                        I am also a French speaker. I began attending school in a French Immersion program at age 6 and continued until I graduated high school with an Ontario French Language Certification. Additionally, I hold a DELF B2 certification.
-                    </p>
-                    <p>
-                        Though I have yet to work in the tech industry, I have valuable experience as a line cook in various restaurants. Working in kitchens has shaped my thought process and approach to communication. In the kitchen, communication is critical: orders must be completed and plated simultaneously, ingredients prepped, and space managed efficiently. I apply the same focus on clear, purposeful, and efficient communication to any team I work with, ensuring I am a productive and valued member.
-                    </p>
-                    <p>
-                        In my free time, I have several hobbies. I enjoy playing the bass guitar, maintaining a small aquarium, playing video games, and exercising. I believe that a balanced life with diverse hobbies helps foster a dynamic mindset, allowing me to tackle new challenges while developing a wide range of skills.
-                    </p>
-                    <p>
-                        Looking ahead to my professional career, I am open-minded and enthusiastic. I am certain that I want to work with technology, though I am open to exploring various sectors. At present, I have a particular interest in AI, software development, and game design.
-                    </p>
-                    <p>
-                        I am always open and available for contact and would be happy to discuss my skills, experiences, or answer any questions. Please feel free to reach out through the provided contact information.
-                    </p>
-                </div>
-                <div class="headshot-container">
-                    <img src="headshot.png" alt="Headshot of Joey Gumulka" class="headshot">
-                </div>
-            </div>
+            <p>This is the about section...</p>
+        </section>
+        <section id="projects" class="text-content hidden">
+            <h1>Projects</h1>
+            <p>This is the projects section...</p>
+        </section>
+        <section id="contact" class="text-content hidden">
+            <h1>Contact</h1>
+            <p>This is the contact section...</p>
         </section>
     </div>
-    <div id="education">
-        <h1>Education Content</h1>
-        <p>Details about education.</p>
-    </div>
-    <div id="projects">
-        <h1>Projects Content</h1>
-        <p>Details about projects.</p>
-    </div>
-    <div id="contact">
-        <h1>Contact Content</h1>
-        <p>Contact details.</p>
-    </div>
 
-    <script src="scripts.js"></script> <!-- Link to JS -->
+    <script src="script.js"></script> <!-- Ensure this path is correct -->
 </body>
 </html>
