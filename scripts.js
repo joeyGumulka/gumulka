@@ -1,20 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.tabs li a');
-    const sections = document.querySelectorAll('div');
+    const sections = document.querySelectorAll('.content section');
 
-    // Function to display the correct section based on the tab clicked
+    // Hide all sections initially
+    sections.forEach(section => section.classList.add('hidden'));
+    // Show the home section by default
+    document.getElementById('home').classList.remove('hidden');
+
+    // Add click event listeners to tabs
     tabs.forEach(tab => {
         tab.addEventListener('click', function(e) {
             e.preventDefault(); // Prevent default link behavior
-            sections.forEach(section => section.style.display = 'none'); // Hide all sections
+
+            // Hide all sections
+            sections.forEach(section => section.classList.add('hidden'));
 
             // Show the corresponding section based on tab clicked
             const targetSection = this.id.replace('-tab', ''); // Get the section ID
-            document.getElementById(targetSection).style.display = 'block'; // Show the section
+            document.getElementById(targetSection).classList.remove('hidden'); // Show the section
         });
     });
-
-    // Display the home section by default when the page loads
-    sections.forEach(section => section.style.display = 'none'); // Hide all sections initially
-    document.getElementById('home').style.display = 'block'; // Show home section
 });
