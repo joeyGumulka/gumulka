@@ -66,5 +66,15 @@ div.content section {
     color: #ffffff;
     text-align: center; /* Centers the text */
     margin-top: 20px; /* Adds space from the top */
+
+    section {
+    padding: 20px;
+    width: 50%; /* Limits content to the left half of the page */
+    margin-left: 0; /* Aligns the content to the left */
+    }
+    
+    section p {
+        text-indent: 40px; /* Indents the first line of each paragraph */
+    }
 }
 
