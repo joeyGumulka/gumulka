@@ -1,32 +1,27 @@
 /* Style for the navigation bar */
 body {
-    background-color: #7eb078;
+    background-color: #7eb078; /* Set the body background color */
 }
 
 nav {
-    background-color: #4e6751;
+    background-color: #4e6751; /* Navigation background color */
     width: 100%;
     padding: 0;
     margin: 0;
     position: relative;
 }
 
-/* Hide all sections except the first one (home) */
-#education, #projects, #contact {
-    display: none;
-}
-
 ul.tabs {
-    list-style-type: none;
+    list-style-type: none; /* Remove bullet points */
     margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox to distribute tabs evenly */
-    justify-content: space-evenly; /* Space tabs equally across the bar */
+    display: flex; /* Use flexbox for tabs */
+    justify-content: space-evenly; /* Space tabs evenly */
     background-color: #4e6751;
 }
 
 ul.tabs li {
-    flex: 1; /* Each list item takes up an equal amount of space */
+    flex: 1; /* Equal space for each tab */
     text-align: center;
 }
 
@@ -34,26 +29,25 @@ ul.tabs li a {
     display: inline-block;
     padding: 14px 0;
     width: 100%;
-    color: white;
-    text-decoration: none;
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
     background-color: #132a16; /* Button background */
     border-radius: 4px;
     margin: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
-    font-size: 18px; /* Increase font size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    font-size: 18px; /* Font size */
 }
 
 ul.tabs li a:hover {
-    background-color: #5c7639;
-    color: #ddd;
+    background-color: #5c7639; /* Hover background color */
+    color: #ddd; /* Hover text color */
 }
 
-/* Make sure content is displayed nicely below the tabs */
+/* Hide all sections except the first one (home) */
 div {
-    padding: 20px;
+    display: none; /* Hide all sections initially */
 }
 
-/* Optionally hide content sections and display based on navigation */
-div:not(:first-child) {
-    display: none;
+#home {
+    display: block; /* Show home section by default */
 }
