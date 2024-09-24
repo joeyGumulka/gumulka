@@ -48,7 +48,7 @@ ul.tabs li a:hover {
 }
 
 .content {
-    /*padding: 20px;*/
+    padding: 20px;
 }
 
 div.content section {
@@ -67,18 +67,30 @@ div.content section {
 }
 
 /* Styles specifically for the home tab */
+#home {
+    display: flex; /* Use flexbox to align content */
+    justify-content: space-between; /* Space between text and image */
+    align-items: flex-start; /* Align items to the start */
+}
+
 #home section {
-    padding: 20px;
-    width: 50%; /* Limits content to the left half of the page */
-    margin-left: 0; /* Aligns the content to the left */
+    width: 50%; /* Left half of the page */
+    padding: 20px; /* Add padding for the section */
 }
 
 #home section p {
     text-indent: 40px; /* Indents the first line of each paragraph */
+    color: black; /* Set text color to black for visibility */
+}
+
+.headshot-container {
+    width: 50%; /* Right half of the page for the headshot */
+    display: flex; /* Use flex to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .headshot {
-    width: 50%; /* Adjust headshot size */
-    max-width: 300px; /* Optional: Set a maximum width for the image */
+    max-width: 100%; /* Ensure the image scales correctly */
     height: auto; /* Maintain aspect ratio */
 }
