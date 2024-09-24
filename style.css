@@ -60,6 +60,7 @@ ul.tabs li {
     margin: 0; /* Remove margin to prevent overflow */
     width: 25%; /* Adjust width to ensure 4 tabs fit within the container */
     box-sizing: border-box; /* Include padding and border in the element's total width */
+    padding-top: 10px;
 }
 
 ul.tabs li a {
@@ -72,7 +73,7 @@ ul.tabs li a {
     transition: background-color 0.3s ease, color 0.3s ease; /* Transition effects */
     font-size: 18px; /* Font size */
     width: 100%; /* Full width of the list item */
-    padding-top: 10px;
+    
 }
 
 ul.tabs li a:hover {
