@@ -1,27 +1,27 @@
 body {
-    background-color: #7eb078; /* Set the body background color */
-    margin: 0; /* Remove default margin */
-    font-family: Arial, sans-serif; /* Set a default font */
+    background-color: #7eb078;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 nav {
-    background-color: #4e6751; /* Navigation background color */
+    background-color: #4e6751;
     width: 100%;
     padding: 0;
     margin: 0;
 }
 
 ul.tabs {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox for tabs */
-    justify-content: space-evenly; /* Space tabs evenly */
+    display: flex;
+    justify-content: space-evenly;
     background-color: #4e6751;
 }
 
 ul.tabs li {
-    flex: 1; /* Equal space for each tab */
+    flex: 1;
     text-align: center;
 }
 
@@ -29,24 +29,28 @@ ul.tabs li a {
     display: inline-block;
     padding: 14px 0;
     width: 100%;
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    background-color: #132a16; /* Button background */
+    color: white;
+    text-decoration: none;
+    background-color: #132a16;
     border-radius: 4px;
     margin: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-    font-size: 18px; /* Font size */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
 }
 
 ul.tabs li a:hover {
-    background-color: #5c7639; /* Hover background color */
-    color: #ddd; /* Hover text color */
+    background-color: #5c7639;
+    color: #ddd;
 }
 
-div {
+.content {
+    padding: 20px;
+}
+
+div.content section {
     display: none; /* Hide all sections initially */
 }
 
-#home {
+.content #home {
     display: block; /* Show home section by default */
 }
