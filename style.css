@@ -76,3 +76,9 @@ div.content section {
 #home section p {
     text-indent: 40px; /* Indents the first line of each paragraph */
 }
+
+.headshot {
+    width: 50%; /* Adjust headshot size */
+    max-width: 300px; /* Optional: Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
