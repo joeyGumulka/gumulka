@@ -1,6 +1,7 @@
-/* Style for the navigation bar */
 body {
     background-color: #7eb078; /* Set the body background color */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a default font */
 }
 
 nav {
@@ -8,7 +9,6 @@ nav {
     width: 100%;
     padding: 0;
     margin: 0;
-    position: relative;
 }
 
 ul.tabs {
@@ -43,7 +43,6 @@ ul.tabs li a:hover {
     color: #ddd; /* Hover text color */
 }
 
-/* Hide all sections except the first one (home) */
 div {
     display: none; /* Hide all sections initially */
 }
