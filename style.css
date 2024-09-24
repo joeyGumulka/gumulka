@@ -11,39 +11,6 @@ nav {
     margin: 0;
 }
 
-/*ul.tabs {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #4e6751;
-    width: 100%;
-}
-
-ul.tabs li {
-    flex: 1;
-    text-align: center;
-}
-
-ul.tabs li a {
-    display: inline-block;
-    padding: 14px 0;
-    width: 100%;
-    color: white;
-    text-decoration: none;
-    background-color: #132a16;
-    border-radius: 4px;
-    margin: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-size: 18px;
-}
-
-ul.tabs li a:hover {
-    background-color: #5c7639;
-    color: #ddd;
-}*/
-
 ul.tabs {
     list-style-type: none; /* Remove bullet points */
     margin: 0; /* Remove default margin */
@@ -93,3 +60,11 @@ div.content section {
 .content #home {
     display: block; /* Show home section by default */
 }
+
+#home h1 {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center; /* Centers the text */
+    margin-top: 20px; /* Adds space from the top */
+}
+
