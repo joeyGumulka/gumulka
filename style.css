@@ -40,14 +40,12 @@ ul.tabs li a {
     transition: background-color 0.3s ease, color 0.3s ease; /* Transition effects */
     font-size: 18px; /* Font size */
     width: 100%; /* Full width of the list item */
-    
 }
 
 ul.tabs li a:hover {
     background-color: #5c7639; /* Background color on hover */
     color: #ddd; /* Text color on hover */
 }
-
 
 .content {
     /*padding: 20px;*/
@@ -66,15 +64,15 @@ div.content section {
     color: #ffffff;
     text-align: center; /* Centers the text */
     margin-top: 20px; /* Adds space from the top */
+}
 
-    section {
+/* Styles specifically for the home tab */
+#home section {
     padding: 20px;
     width: 50%; /* Limits content to the left half of the page */
     margin-left: 0; /* Aligns the content to the left */
-    }
-    
-    section p {
-        text-indent: 40px; /* Indents the first line of each paragraph */
-    }
 }
 
+#home section p {
+    text-indent: 40px; /* Indents the first line of each paragraph */
+}
