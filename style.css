@@ -55,7 +55,7 @@ ul.tabs li a:hover {
     display: none; /* Hide all sections initially */
 }
 
-.content #home {
+.text-content #home {
     display: block; /* Show home section by default */
 }
 
