@@ -11,7 +11,7 @@ nav {
     margin: 0;
 }
 
-/*ul.tabs {
+ul.tabs {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -42,40 +42,6 @@ ul.tabs li a {
 ul.tabs li a:hover {
     background-color: #5c7639;
     color: #ddd;
-}*/
-
-ul.tabs {
-    list-style-type: none; /* Remove bullet points */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    background-color: #4e6751; /* Background color for the tabs */
-    width: 100%; /* Full width */
-    text-align: center; /* Center-align the inline-block elements */
-}
-
-ul.tabs li {
-    display: inline-block; /* Make list items inline-block */
-    text-align: center; /* Center text within each item */
-    margin: 0; /* Remove margin to prevent overflow */
-    width: 25%; /* Adjust width to ensure 4 tabs fit within the container */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
-}
-
-ul.tabs li a {
-    display: block; /* Make the link fill the entire tab */
-    padding: 14px 0; /* Vertical padding */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    background-color: #132a16; /* Background color for links */
-    border-radius: 4px; /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effects */
-    font-size: 18px; /* Font size */
-    width: 100%; /* Full width of the list item */
-}
-
-ul.tabs li a:hover {
-    background-color: #5c7639; /* Background color on hover */
-    color: #ddd; /* Text color on hover */
 }
 
 .content {
