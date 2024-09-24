@@ -16,5 +16,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Display the home section by default when the page loads
     sections.forEach(section => section.style.display = 'none'); // Hide all sections initially
-    document.getElementById('home').style.display = 'block'; // Show the home section
+    document.getElementById('home').style.display = 'block'; // Show home section
 });
