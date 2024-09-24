@@ -19,5 +19,3 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('home').style.display = 'block'; // Show home section
 });
 
-
-console.log("123")
