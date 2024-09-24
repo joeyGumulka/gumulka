@@ -51,12 +51,16 @@ ul.tabs li a:hover {
     padding: 20px;
 }
 
-.text-content #home {
-    display: block; /* Show home section by default */
+.text-content {
+  display: block; /* Show the text content */
+}
+
+.text-content section {
+  display: none; /* Hide all sections initially */
 }
 
 .text-content #about-me {
-    display: block; /* Show home section by default */
+  display: block; /* Show the "About Me" section */
 }
 
 #home h1 {
