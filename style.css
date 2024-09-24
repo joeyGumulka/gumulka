@@ -52,15 +52,15 @@ ul.tabs li a:hover {
 }
 
 .text-content {
-  display: block; /* Show the text content */
+    display: none; /* Hide all sections initially */
 }
 
-.text-content section {
-  display: none; /* Hide all sections initially */
+#home {
+    display: block; /* Show home section by default */
 }
 
-.text-content #about-me {
-  display: block; /* Show the "About Me" section */
+.hidden {
+    display: none;
 }
 
 #home h1 {
