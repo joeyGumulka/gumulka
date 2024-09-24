@@ -51,6 +51,11 @@ ul.tabs li a:hover {
     padding: 20px;
 }
 
+
+.text-content {
+  display: block; /* Show the text content */
+}
+
 .text-content section {
     display: none; /* Hide all sections initially */
 }
