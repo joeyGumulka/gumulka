@@ -37,6 +37,22 @@ ul.tabs li a {
     font-size: 18px;
 }
 
+#home {
+    display: flex; /* Enable flexbox */
+}
+
+.home-content {
+    flex: 1; /* Take up equal space */
+    max-width: 50%; /* Limit width to 50% */
+    box-sizing: border-box; /* Include padding/borders in the width */
+    padding-right: 20px; /* Add space to the right */
+}
+
+.headshot {
+    flex: 1; /* Take up equal space */
+    max-width: 50%; /* Limit width to 50% */
+    box-sizing: border-box; /* Include padding/borders in the width */
+}
 #home h1 {
     text-align: center;
     margin: 20px 0; 
