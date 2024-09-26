@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
   function updateFlexLayout() {
     const activeSection = document.querySelector('.text-content.active');
     if (activeSection && activeSection.id === 'home') {
-      activeSection.classList.add('flex'); // Apply flex if Home is active
+      activeSection.classList.add('flex'); 
     } else {
       contentSections.forEach(section => {
-        section.classList.remove('flex'); // Remove flex if any other tab is active
+        section.classList.remove('flex'); 
       });
     }
   }
@@ -17,24 +17,22 @@ document.addEventListener("DOMContentLoaded", function() {
     link.addEventListener('click', function(event) {
       event.preventDefault();
 
-      // Remove active class from all tabs and content
+
       tabLinks.forEach(link => link.classList.remove('active'));
       contentSections.forEach(section => {
         section.classList.remove('active');
-        section.classList.remove('flex'); // Ensure flex is removed for inactive sections
+        section.classList.remove('flex'); 
       });
 
-      // Add active class to the clicked tab and corresponding content
+     
       this.classList.add('active');
-      const targetId = this.getAttribute('href').substring(1); // Get the target ID
+      const targetId = this.getAttribute('href').substring(1); 
       const target = document.getElementById(targetId);
       target.classList.add('active');
 
-      // Check and update flex layout
       updateFlexLayout();
     });
   });
 
-  // Check on page load to set flex for the Home section
   updateFlexLayout();
 });
