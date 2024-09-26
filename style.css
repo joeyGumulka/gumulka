@@ -37,12 +37,19 @@ ul.tabs li a {
     font-size: 18px;
 }
 
+#home-tab {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    
+}
+
 ul.tabs li a:hover {
     background-color: #5c7639;
 }
 
 ul.tabs li a.active {
-    background-color: #1b250e;
+    background-color: #0a0f0a;
 }
 
 .content {
