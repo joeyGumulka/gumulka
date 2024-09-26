@@ -57,13 +57,10 @@ ul.tabs li a {
     margin-left: 150px;
 }
 
-.heading-container {
-    margin: 40px 0; 
-    text-align: center; 
-}
-
 h1 {
-    margin: 0;
+    width: 100%; 
+    text-align: center; 
+    margin: 40px 0; 
 }
 
 
