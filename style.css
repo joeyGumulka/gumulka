@@ -44,6 +44,12 @@ ul.tabs li a {
     justify-content: space-between;
 }
 
+.home-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;  /* Adjust as needed for vertical alignment */
+}
+
 .home-content {
     flex: 1; /* Take up remaining space */
     max-width: 50%;
