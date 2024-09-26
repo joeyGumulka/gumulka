@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box; 
-}
-
 body {
     background-color: #7eb078;
     margin: 0;
@@ -22,12 +18,12 @@ ul.tabs {
     background-color: #4e6751;
     width: 100%;
     text-align: center;
-    display: flex; /* Use flexbox for better alignment */
-    justify-content: space-around; /* Distribute tabs evenly */
+    display: flex;
+    justify-content: space-around;
 }
 
 ul.tabs li {
-    flex: 1; /* Each tab will take equal space */
+    flex: 1;
     margin: 0;
 }
 
@@ -41,19 +37,26 @@ ul.tabs li a {
     font-size: 18px;
 }
 
-.tabs li a.active {
-    background-color: #5c7639; /* Same as hover color */
-    color: white;
+ul.tabs li a:hover {
+    background-color: #5c7639;
 }
 
+ul.tabs li a.active {
+    background-color: #5c7639;
+}
 
 .content {
     padding: 20px;
 }
 
 .text-content {
-    display: none; 
+    display: none; /* Hide all sections initially */
 }
-#home {
-    display: block; 
+
+.text-content.hidden {
+    display: none;
+}
+
+.text-content.active {
+    display: block;
 }
