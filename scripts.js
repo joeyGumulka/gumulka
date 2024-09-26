@@ -15,6 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
       const targetId = this.getAttribute('href').substring(1); // Get the target ID
       const target = document.getElementById(targetId);
       target.classList.add('active');
+
+      // Adjust Flexbox layout if needed
+      // Example: Adjust the height of the content sections
+      contentSections.forEach(section => {
+        section.style.height = 'auto';
+      });
     });
   });
 });
