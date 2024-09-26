@@ -54,13 +54,17 @@ ul.tabs li a {
     max-width: 50%; 
     box-sizing: border-box; 
     justify-content: center; 
-    margin-left: 100px;
+    margin-left: 150px;
 }
-/*#home h1 {
-    text-align: center;
-    margin: 20px 0; 
-    width: 100%;
-}*/
+
+.heading-container {
+    margin: 40px 0; 
+    text-align: center; 
+}
+
+h1 {
+    margin: 0;
+}
 
 
 #contact h1 {
