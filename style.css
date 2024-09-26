@@ -51,17 +51,6 @@ ul.tabs li a {
     margin-right: 20px;
 }
 
-.headshot-container {
-    flex: 1; /* Take up remaining space */
-    max-width: 40%;
-    background-color: #132a16;
-    border-radius: 15px;
-}
-
-.headshot {
-    width: 100%; /* Make image responsive */
-    border-radius: 15px; /* Match the corners of the container */
-}
 #home h1 {
     text-align: center;
     margin: 20px 0; 
