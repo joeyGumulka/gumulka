@@ -42,12 +42,14 @@ ul.tabs li a {
 }
 
 .home-content {
+    margin-top: 40px;
     flex: 0 0 50%; 
     max-width: 50%; 
     box-sizing: border-box; 
     padding-right: 20px; 
 }
 .headshot {
+    margin-top: 40px;
     flex: 1; 
     max-width: 50%; 
     box-sizing: border-box; 
