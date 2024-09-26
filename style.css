@@ -50,7 +50,7 @@ ul.tabs li a.active {
 }
 
 .text-content {
-    display: none; /* Hide all sections initially */
+    display: none; /* Hide all sections in itially */
 }
 
 .text-content.hidden {
