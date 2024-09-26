@@ -74,8 +74,14 @@ ul.tabs li a {
 }
 
 #resume {
-    margin-top: 20px;
-    justify-content: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+}
+.resume {
+    max-width: 100%;
+    height: auto;
 }
 
 ul.tabs li a:hover {
