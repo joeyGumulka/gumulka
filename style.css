@@ -74,10 +74,8 @@ ul.tabs li a {
 }
 
 #resume {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 20px; 
+    text-align: center; /* Center the image */
+    margin-top: 20px; /* Add some margin as needed */
 }
 .resume {
     max-width: 100%;
