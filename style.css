@@ -38,23 +38,24 @@ ul.tabs li a {
 }
 
 #home {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
+
 .home-content {
-    flex: 0 0 50%; 
-    max-width: 50%; 
-    box-sizing: border-box; 
-    margin-right: 20px; 
+    flex: 1; /* Take up remaining space */
+    max-width: 50%;
+    box-sizing: border-box;
+    margin-right: 20px;
 }
+
 .headshot-container {
-    flex: 0 0 40%; 
-    max-width: 40%; 
-    background-color: #132a16; 
-    border-radius: 15px; 
-    padding: 10px; 
+    flex: 1; /* Take up remaining space */
+    max-width: 40%;
+    background-color: #132a16;
+    border-radius: 15px;
 }
 
 .headshot {
