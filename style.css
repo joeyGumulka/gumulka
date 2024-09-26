@@ -48,15 +48,17 @@ ul.tabs li a {
     box-sizing: border-box; 
     margin-right: 20px; 
 }
-.headshot {
-    max-width: 200px; 
-    height: auto; 
-}
 .headshot-container {
+    flex: 0 0 40%; 
+    max-width: 40%; 
     background-color: #132a16; 
     border-radius: 15px; 
     padding: 10px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.headshot {
+    width: 100%; /* Make image responsive */
+    border-radius: 15px; /* Match the corners of the container */
 }
 #home h1 {
     text-align: center;
