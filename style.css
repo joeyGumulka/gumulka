@@ -42,19 +42,19 @@ ul.tabs li a {
 }
 
 .home-content {
-    margin-top: 40px;
+    margin-top: 70px;
     flex: 0 0 50%; 
     max-width: 50%; 
     box-sizing: border-box; 
     padding-right: 20px; 
 }
 .headshot {
-    margin-top: 40px;
+    margin-top: 90px;
     flex: 1; 
     max-width: 50%; 
     box-sizing: border-box; 
     justify-content: center; 
-    align-items: center; 
+    margin-left: 100px;
 }
 /*#home h1 {
     text-align: center;
