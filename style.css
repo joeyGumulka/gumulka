@@ -96,6 +96,21 @@ ul.tabs li a {
     font-size: 24pt;
 }
 
+
+#projects h1 {
+    text-align: center;
+    font-size: 32pt;
+}
+#projects h2 {
+    font-size: 24pt;
+    margin-left: 20px;
+}
+#projects h4 {
+    font-size: 24pt;
+    margin-left: 20px;
+    font-style: italic;
+}
+
 ul.tabs li a:hover {
     background-color: #5c7639;
 }
