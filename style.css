@@ -74,8 +74,8 @@ ul.tabs li a {
 }
 
 #resume {
-    text-align: center; /* Center the image */
-    margin-top: 20px; /* Add some margin as needed */
+    text-align: center; 
+    margin-top: 20px; 
 }
 .resume {
     max-width: 100%;
@@ -124,7 +124,7 @@ ul.tabs li a.active {
 }
 
 .text-content {
-    display: none; /* Hide all sections in itially */
+    display: none; 
 }
 
 .text-content.hidden {
