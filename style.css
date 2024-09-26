@@ -41,9 +41,11 @@ ul.tabs li a {
     font-size: 18px;
 }
 
-ul.tabs li a:hover {
-    background-color: #5c7639;
+.tabs li a.active {
+    background-color: #5c7639; /* Same as hover color */
+    color: white;
 }
+
 
 .content {
     padding: 20px;
