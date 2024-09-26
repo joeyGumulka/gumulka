@@ -82,6 +82,20 @@ ul.tabs li a {
     height: auto;
 }
 
+#about h1 {
+    text-align: center;
+    font-size: 32pt;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 24pt;
+}
+#about h3 {
+    text-align: center;
+    font-size: 24pt;
+}
+
 ul.tabs li a:hover {
     background-color: #5c7639;
 }
