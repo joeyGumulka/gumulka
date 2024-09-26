@@ -47,16 +47,19 @@ ul.tabs li a {
     box-sizing: border-box; 
     padding-right: 20px; 
 }
-
 .headshot {
     flex: 1; 
     max-width: 50%; 
     box-sizing: border-box; 
+    justify-content: center; 
+    align-items: center; 
 }
 #home h1 {
     text-align: center;
     margin: 20px 0; 
+    width: 100%;
 }
+
 
 #contact h1 {
     text-align: center;
