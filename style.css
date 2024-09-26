@@ -73,6 +73,11 @@ ul.tabs li a {
     font-size: 56pt;
 }
 
+.resume {
+    margin-top: 20px;
+    justify-content: center;
+}
+
 ul.tabs li a:hover {
     background-color: #5c7639;
 }
