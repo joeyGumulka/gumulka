@@ -37,7 +37,7 @@ ul.tabs li a {
     font-size: 18px;
 }
 
-#home {
+#home.flex {
     display: flex;
 }
 
