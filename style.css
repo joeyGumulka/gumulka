@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box; 
+}
+
 body {
     background-color: #7eb078;
     margin: 0;
@@ -18,12 +22,13 @@ ul.tabs {
     background-color: #4e6751;
     width: 100%;
     text-align: center;
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: space-around; /* Distribute tabs evenly */
 }
 
 ul.tabs li {
-    display: inline-block;
+    flex: 1; /* Each tab will take equal space */
     margin: 0;
-    width: 25%;
 }
 
 ul.tabs li a {
@@ -45,14 +50,8 @@ ul.tabs li a:hover {
 }
 
 .text-content {
-    display: none; /* Hide all sections initially */
+    display: none; 
 }
-
 #home {
-    display: block; /* Show home section by default */
+    display: block; 
 }
-
-.hidden {
-    display: none; /* Utility class to hide sections */
-}
-/*test */
