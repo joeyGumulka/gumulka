@@ -57,16 +57,19 @@ ul.tabs li a {
     margin-left: 150px;
 }
 
-h1 {
-    width: 100%; 
-    text-align: center; 
-    margin: 40px 0; 
-}
+
+
 
 
 #contact h1 {
     text-align: center;
     font-size: 56pt;
+}
+
+.contact.content {
+    font-size 32pt;
+    text-align: center;
+    margin-top: 30pt;
 }
 
 ul.tabs li a:hover {
