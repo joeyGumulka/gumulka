@@ -1,7 +1,8 @@
 body {
-    background-color: #F5F0E7;
+    background-color: #EFE8DC;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Chakra Petch', sans-serif; 
+    color: #704214;
 }
 
 nav {
@@ -30,9 +31,9 @@ ul.tabs li {
 ul.tabs li a {
     display: block;
     padding: 14px 0;
-    color: white;
+    color: #704214;
     text-decoration: none;
-    background-color: #132a16;
+    background-color: #9F9D84;
     transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 18px;
 }
@@ -52,14 +53,12 @@ ul.tabs li a {
     margin-top: 80px;
     flex: 1; 
     max-width: 50%; 
+    border: 10px solid #9F9D84; 
+    border-radius: 15px; 
     box-sizing: border-box; 
     justify-content: center; 
     margin-left: 150px;
 }
-
-
-
-
 
 
 
@@ -80,6 +79,8 @@ ul.tabs li a {
 .resume {
     max-width: 100%;
     height: auto;
+    border: 10px solid #9F9D84; 
+    border-radius: 15px; 
 }
 
 #about h1 {
@@ -103,20 +104,31 @@ ul.tabs li a {
 }
 #projects h2 {
     font-size: 24pt;
-    margin-left: 20px;
+    
 }
 #projects h4 {
-    font-size: 24pt;
-    margin-left: 20px;
+    font-size: 20pt;
+   
     font-style: italic;
 }
+#projects h5 {
+    font-size: 16pt;
+    
+}
+#projects {
+    margin-left: 20px;
+}
+#projects h6 {
+    font-size: 24pt;
+}  
+
 
 ul.tabs li a:hover {
-    background-color: #5c7639;
+    background-color: #9F9D84;
 }
 
 ul.tabs li a.active {
-    background-color: #0a0f0a;
+    background-color: #A9BBA9;
 }
 
 .content {
